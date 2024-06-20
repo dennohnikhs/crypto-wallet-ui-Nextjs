@@ -8,7 +8,7 @@ import CoinCard from './CoinCard';
 export default function HeroSwipper() {
     return (
         <>
-            <Swiper navigation={true}>
+            <Swiper navigation={false}>
                 {dummyData.map((coin, index) => (
                     <SwiperSlide key={index}>
                         <CoinCard details={coin} />

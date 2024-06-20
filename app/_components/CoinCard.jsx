@@ -9,8 +9,8 @@ const CoinCard = ({ details }) => {
           <p className='lg:text-2xl text-white'>{details.name}</p>
           <p className='text-cr-green text-md'>Market Gap: {details.gap}</p>
           <p className='text-sm text-[#9ca3af]'>Replies:{details.replies}</p>
-          <p className='text-lg text-[#9ca3af] overflow-hidden'>{details.desc}</p>
-          <p className='text-md text-[#6b7990] overflow-hidden'>Deployed by:{details.desc}</p>
+          <p className=' text-[#9ca3af] overflow-hidden text-xs'>{details.desc}</p>
+          <p className=' text-[#6b7990] overflow-hidden text-xs'>Deployed by:{details.desc}</p>
 
         </div>
       </div>

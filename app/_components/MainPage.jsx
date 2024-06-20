@@ -14,21 +14,19 @@ import HeroSwipper from './HeroSwipper';
 
 
 const MainPage = () => {
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-    const toggleSidebar = () => {
-        setIsSidebarOpen(!isSidebarOpen);
-    };
+ 
 
     return (
-        <div className='bg-cr-dark-black-light '>
-            <NavBar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-            {isSidebarOpen && <SideBar />}
-            <div className='bg-[url("https://ape.store/img/apebg.jpg")] pt-[2rem]'>
+        <div>
+            
+            <div className='bg-[url("https://ape.store/img/apebg.jpg")]'>
 
-            <HeroSwipper/>
+                <div className=' backdrop-opacity-10 backdrop-invert bg-cr-dark-black-main/95 pt-[2rem] '>
+                <HeroSwipper />
+                </div>
+
             </div>
-            <div className='grid grid-cols-1  lg:grid-cols-3 md:grid-cols-2 lg:gap-[5rem] lg:p-[1rem] gap-[1rem]  px-3 py-[1rem]'>
+            <div className='grid grid-cols-1 xl:grid-cols-3  lg:grid-cols-2 md:grid-cols-2 lg:gap-[5rem] lg:p-[1rem] gap-[1rem]  px-3 py-[1rem]'>
                 {dummyData.map((coin, index) => (
                     <CoinCard key={index} details={coin} />
 
