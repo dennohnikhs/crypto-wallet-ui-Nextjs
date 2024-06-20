@@ -3,7 +3,7 @@ import Button from './Button';
 
 const NavBar = ({ isOpen, toggleSidebar }) => {
     return (
-        <div>
+        <div className='sticky top-0 z-10'>
             <div className=' lg:py-[1rem] py-[0.5rem] px-[1rem] bg-cr-dark-light shadow-lg flex justify-between items-center'>
                 <div className='hidden lg:flex flex-row gap-2 items-center'>
                     <div className='h-3 w-3 rounded-full bg-cr-orange border lg:bg-opacity-40 border-opacity-30   border-cr-orange-main  '></div>

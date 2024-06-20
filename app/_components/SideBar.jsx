@@ -2,7 +2,7 @@ import React from 'react';
 
 const SideBar = () => {
     return (
-        <div className='hidden lg:block'>
+        <div className='hidden lg:block fixed left-0 z-10 ' >
 
 
             <div className="flex h-screen  flex-col justify-between ">
