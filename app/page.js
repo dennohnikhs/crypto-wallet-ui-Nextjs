@@ -8,7 +8,7 @@ const Home = () => {
       <div>
         <SideBar/>
       </div>
-      <div className='bg-cr-dark-light bg-opacity-10 col-span-6 '>
+      <div className=' col-span-6  '>
         <MainPage/>
       </div>
     </div>

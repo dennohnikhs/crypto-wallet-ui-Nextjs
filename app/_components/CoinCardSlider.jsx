@@ -1,9 +1,12 @@
 import React from 'react';
 
 
-const CoinCard = ({ details }) => {
+const CoinCardSlider = ({ details }) => {
   return (
-    <div className=' bg-cr-dark-black-main  rounded-xl h-auto w-[340px] mx-auto p-[1rem] '>
+  <div>
+    <h1 className='text-xl text-white '>{details.header}</h1>
+    <div className='p-2 border border-cr-green bg-cr-dark-light rounded-full'>{details.iconUrl}</div>
+    <div className=' bg-cr-dark-black-main rounded-xl h-auto w-[340px] mx-auto p-[1rem]'>
       <div className='flex flex-row gap-5'>
         <div>
           <p className='lg:text-2xl text-white'>{details.name}</p>
@@ -50,9 +53,10 @@ const CoinCard = ({ details }) => {
 
 
     </div>
+  </div>
   );
 }
 
 
 
-export default CoinCard;
+export default CoinCardSlider;
